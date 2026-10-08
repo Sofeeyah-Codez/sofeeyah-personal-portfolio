@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="Sofeeyah — Creative Technologist, Web Developer and Digital Technology enthusiast." />
+  <title>Sofeeyah — Creative Technologist</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <span class="loader__label">SOFEEYAH</span>
+      <span class="loader__count" id="loaderCount">00</span>
+      <div class="loader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="brand">SOFEEYAH</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="nav__cta">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero__glow hero__glow--one"></div>
+      <div class="hero__glow hero__glow--two"></div>
+      <div class="hero__grid"></div>
+
+      <div class="hero__topline reveal">OLANREWAJU SOFIAT <span></span> CREATIVE TECHNOLOGIST <span></span> LAGOS, NIGERIA</div>
+
+      <div class="hero__content">
+        <div class="hero__headline-wrap">
+          <p class="eyebrow reveal"><span class="typed-role" id="typedRole"></span><span class="typed-cursor" aria-hidden="true">|</span></p>
+          <h1 class="hero__headline">
+            <span class="line reveal-line"><span>I BUILD</span></span>
+            <span class="line reveal-line"><span>DIGITAL</span></span>
+            <span class="line reveal-line accent-line"><span>EXPERIENCES.</span></span>
+          </h1>
+          <p class="hero__copy reveal">I combine code, creativity and emerging technology to create digital experiences that look intentional, feel modern and solve real problems.</p>
+
+          <div class="hero__actions reveal">
+            <a href="#projects" class="button button--primary">View my projects <span>↘</span></a>
+            <a href="https://1drv.ms/w/c/3d0e7e1757d19be4/IQBG-e2RQA9PSILhWo_tk8OtAfOFVIceuwEE_YBK-CSuBRE?e=vOPIjj" class="button button--ghost" download>Download CV <span>↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero__portrait-wrap reveal">
+          <div class="portrait-card">
+            <img src="images/profile.jpg" alt="Sofeeyah" class="portrait-card__image" id="profileImage" />
+            <div class="portrait-card__meta">
+              <span>SOFEEYAH</span>
+              <span>LAGOS, NG</span>
+            </div>
+          </div>
+          <div class="floating-tag floating-tag--top">CODE × CREATE</div>
+          <div class="floating-tag floating-tag--bottom">CURIOUS BY DEFAULT</div>
+        </div>
+      </div>
+
+      <div class="hero__footer reveal">
+        <span>SCROLL TO EXPLORE</span>
+        <span class="scroll-line"><i></i></span>
+        <span>01—06</span>
+      </div>
+    </section>
+
+    <section class="statement section" id="about">
+      <div class="container">
+        <div class="section-marker reveal"><span>01</span><span>ABOUT</span></div>
+        <div class="statement__layout">
+          <h2 class="statement__title reveal">MORE THAN<br /><span>JUST CODE.</span></h2>
+          <div class="statement__body">
+            <p class="statement__lead reveal">I’m a creative technologist who enjoys turning ideas into useful, visual and interactive digital experiences.</p>
+            <p class="statement__text reveal">My work sits at the intersection of web development, digital skills, AI exploration, creative coding and technology education. I care about how things work — but I also care deeply about how they feel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="focus section" aria-label="What I do">
+      <div class="container">
+        <div class="section-marker reveal"><span>02</span><span>WHAT I DO</span></div>
+        <div class="focus-grid">
+          <article class="focus-card reveal" data-index="01">
+            <span class="focus-card__number">01</span>
+            <h3>BUILD</h3>
+            <p>Responsive websites, interfaces and digital experiences with a strong visual point of view.</p>
+            <span class="focus-card__arrow">↗</span>
+          </article>
+          <article class="focus-card reveal" data-index="02">
+            <span class="focus-card__number">02</span>
+            <h3>CREATE</h3>
+            <p>Creative coding, interactive projects and visual systems that make technology feel approachable.</p>
+            <span class="focus-card__arrow">↗</span>
+          </article>
+          <article class="focus-card reveal" data-index="03">
+            <span class="focus-card__number">03</span>
+            <h3>INNOVATE</h3>
+            <p>Experimenting with new ideas and emerging technology to create better, more thoughtful digital experiences.</p>
+            <span class="focus-card__arrow">↗</span>
+          </article>
+          <article class="focus-card reveal" data-index="04">
+            <span class="focus-card__number">04</span>
+            <h3>EMPOWER</h3>
+            <p>Digital skills, coding and technology learning that help people become more confident with digital tools.</p>
+            <span class="focus-card__arrow">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-marker reveal"><span>03</span><span>SELECTED PROJECTS</span></div>
+        <div class="projects__intro">
+          <h2 class="section-title reveal">SELECTED<br /><span>PROJECTS.</span></h2>
+          <p class="projects__intro-text reveal">A growing collection of websites and digital projects built around clarity, visual detail and purposeful interaction.</p>
+        </div>
+
+        <div class="projects__list">
+          <article class="project reveal" data-project="01">
+            <div class="project__visual">
+              <img src="images/project-tourism.jpg" alt="Tourism Website preview" class="project__image" />
+
+            </div>
+            <div class="project__info">
+              <span class="project__number">01</span>
+              <h3>Tourism Website</h3>
+              <p>A destination-focused site built to showcase places to visit, with clean navigation and responsive image galleries.</p>
+              <div class="project__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project__links">
+                <a href="https://voyage-by-sofeeyah.vercel.app/" class="project-link" target="_blank" rel="noreferrer">Live site</a>
+                <a href="https://github.com/Sofeeyah-Codez/voyage-by-sofeeyah" class="project-link" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--reverse reveal" data-project="02">
+            <div class="project__visual">
+              <img src="images/project-nutrition.jpg" alt="Nutrition Website preview" class="project__image" />
+            </div>
+            <div class="project__info">
+              <span class="project__number">02</span>
+              <h3>Nutrition Website</h3>
+              <p>An informational site on healthy eating, with clear typography and a layout designed to make dense content easy to scan.</p>
+              <div class="project__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project__links">
+                <a href="https://sofeeyah-nutrition-insight-lfvw.vercel.app/" class="project-link" target="_blank" rel="noreferrer">Live site</a>
+                <a href="https://github.com/Sofeeyah-Codez/Sofeeyah-Nutrition-Insight" class="project-link" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-project="03">
+            <div class="project__visual">
+              <img src="images/project-restaurant.jpg" alt="Restaurant Website preview" class="project__image" />
+            </div>
+            <div class="project__info">
+              <span class="project__number">03</span>
+              <h3>Restaurant Website</h3>
+              <p>A bold restaurant concept built around atmosphere, menu presentation and a refined visual identity.</p>
+              <div class="project__tags"><span>HTML</span><span>CSS</span><span>UI Design</span></div>
+              <div class="project__links">
+                <a href="https://sofeeyah-spice.vercel.app/" class="project-link" target="_blank" rel="noreferrer">Live site</a>
+                <a href="https://github.com/Sofeeyah-Codez/Sofeeyah-Spice" class="project-link" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Got another project to show off? Copy one of the <article class="project"> blocks
+               above (the whole thing, opening tag to closing tag), drop it in below, then swap
+               in your own image path, title, description, tags and links. Toss "project--reverse"
+               into the class list if you want the picture on the other side this time. -->
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-marker reveal"><span>04</span><span>SKILLS + TOOLKIT</span></div>
+        <div class="skills__heading">
+          <h2 class="section-title reveal">WHAT I<br /><span>WORK WITH.</span></h2>
+          <p class="reveal">A cross-disciplinary toolkit for building, designing, exploring and communicating with technology.</p>
+        </div>
+
+        <div class="skill-matrix">
+          <div class="skill-panel reveal">
+            <span class="skill-panel__label">01 / DEVELOPMENT</span>
+            <div class="skill-cloud">
+              <span class="skill-chip skill-chip--large">HTML</span>
+              <span class="skill-chip">CSS</span>
+              <span class="skill-chip">JAVASCRIPT</span>
+              <span class="skill-chip">RESPONSIVE DESIGN</span>
+              <span class="skill-chip">GIT</span>
+              <span class="skill-chip">GITHUB</span>
+              <span class="skill-chip">VS CODE</span>
+            </div>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-panel__label">02 / AI + EMERGING TECH</span>
+            <div class="skill-cloud">
+              <span class="skill-chip skill-chip--large">AI TOOLS</span>
+              <span class="skill-chip">PROMPT ENGINEERING</span>
+              <span class="skill-chip">AI-ASSISTED WORKFLOWS</span>
+              <span class="skill-chip">EMERGING TECHNOLOGY</span>
+            </div>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-panel__label">03 / DIGITAL</span>
+            <div class="skill-cloud">
+              <span class="skill-chip skill-chip--large">DIGITAL LITERACY</span>
+              <span class="skill-chip">MICROSOFT OFFICE</span>
+              <span class="skill-chip">GOOGLE WORKSPACE</span>
+              <span class="skill-chip">COMPUTER APPLICATIONS</span>
+            </div>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-panel__label">04 / CREATIVE</span>
+            <div class="skill-cloud">
+              <span class="skill-chip skill-chip--large">CREATIVE CODING</span>
+              <span class="skill-chip">GRAPHIC DESIGN</span>
+              <span class="skill-chip">PICTOBLOX</span>
+              <span class="skill-chip">INTERACTIVE PROJECTS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick tool list along the bottom. Picked up a new tool? Add another <span> in the group on the right. -->
+        <div class="tools-strip reveal">
+          <span>WHAT I WORK WITH</span>
+          <div class="tools-strip__items">
+            <span>VS CODE</span><span>GITHUB</span><span>CANVA</span><span>MICROSOFT 365</span><span>GOOGLE WORKSPACE</span><span>PICTOBLOX</span><span>AI TOOLS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-marker reveal"><span>05</span><span>EXPERIENCE</span></div>
+        <div class="experience__header">
+          <h2 class="section-title reveal">WHERE I<br /><span>CREATE IMPACT.</span></h2>
+          <p class="reveal">Technology becomes more valuable when it helps people do something they could not do before.</p>
+        </div>
+        <div class="experience-card reveal">
+          <div class="experience-card__main">
+            <span class="experience-card__tag">TECHNOLOGY · DIGITAL SKILLS</span>
+            <h3>Bbright Tech Hub</h3>
+            <p>I work across web development, digital literacy, coding programs and technology-focused learning — helping turn complex digital ideas into practical experiences.</p>
+            <div class="experience-card__skills"><span>WEB DEVELOPMENT</span><span>DIGITAL LITERACY</span><span>CODING PROGRAMS</span><span>AI &amp; DIGITAL TOOLS</span></div>
+          </div>
+          <span class="experience-card__arrow">↗</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact__glow"></div>
+      <div class="contact__glow--two"></div>
+      <div class="container contact__container">
+        <div class="section-marker reveal"><span>06</span><span>CONTACT</span></div>
+
+        <div class="contact__layout">
+          <div class="contact__intro reveal">
+            <p class="eyebrow">HAVE AN IDEA?</p>
+            <h2 class="contact__title">LET'S BUILD<br /><span>SOMETHING</span><br />WORTH EXPERIENCING.</h2>
+            <p class="contact__lead">Whether it's a website, an AI-powered idea, a coding lesson or a creative project — I'd love to hear about it.</p>
+
+            <!-- CONTACT CARDS  -->
+            <div class="contact-cards">
+              <a class="contact-card reveal" href="mailto:olanrewajusofiyat1@gmail.com">
+                <span class="contact-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 6.5l9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="contact-card__body"><b>Email</b><small>olanrewajusofiyat1@gmail.com</small></span>
+              </a>
+              <a class="contact-card reveal" href="tel:+2349046267936">
+                <span class="contact-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="contact-card__body"><b>Phone</b><small>+234 904 626 7936</small></span>
+              </a>
+              <div class="contact-card contact-card--static reveal">
+                <span class="contact-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.1-7-11.3A7 7 0 0 1 19 9.7C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.7" r="2.4"/></svg>
+                </span>
+                <span class="contact-card__body"><b>Location</b><small>Lagos, Nigeria</small></span>
+              </div>
+            </div>
+
+           
+            <div class="social-links reveal">
+              <a class="social-link" href="https://github.com/Sofeeyah-Codez" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              </a>
+              <a class="social-link" href="https://www.linkedin.com/in/olanrewaju-sofiat-b64744424" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H4.06V19h2.88V8.5zM5.5 4.5A1.68 1.68 0 1 0 5.5 7.86 1.68 1.68 0 0 0 5.5 4.5zM20 12.9c0-3-1.6-4.4-3.75-4.4-1.73 0-2.5.95-2.93 1.62V8.5h-2.88c.04.83 0 10.5 0 10.5h2.88v-5.86c0-.31.02-.63.11-.85.25-.63.82-1.28 1.77-1.28 1.25 0 1.8.95 1.8 2.34V19H20v-6.1z"/></svg>
+              </a>
+              <a class="social-link" href="https://wa.me/2349046267936" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.65 1.44 5.22L2 22l4.99-1.53a9.9 9.9 0 0 0 5.05 1.37h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.46 17.5 2 12.04 2zm5.8 14.1c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.13.11-1.83-.11-.42-.13-.96-.31-1.66-.6-2.92-1.26-4.83-4.2-4.98-4.4-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.26-.29.58-.36.77-.36h.55c.18 0 .42-.03.65.5.24.55.81 1.9.88 2.04.07.15.11.32.02.51-.09.19-.13.31-.27.47-.13.16-.28.36-.4.48-.13.13-.27.28-.11.55.15.27.68 1.13 1.47 1.83 1.01.9 1.87 1.18 2.14 1.32.27.13.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.61-.13.25.09 1.58.75 1.85.89.27.13.45.2.51.31.07.11.07.65-.17 1.33z"/></svg>
+              </a>
+              <a class="social-link" href="http://t.me/So_fee_yah" target="_blank" rel="noreferrer" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.05 3.45 2.9 10.6c-1.23.5-1.22 1.19-.22 1.49l4.65 1.45 1.8 5.5c.22.6.37.84.76.84.37 0 .55-.17.78-.4l1.86-1.8 4.3 3.17c.8.44 1.36.21 1.56-.73l2.82-13.3c.3-1.17-.45-1.7-1.16-1.37zM8.6 13.3l9.3-5.86c.44-.27.84-.12.51.18l-7.9 7.14-.31 3.3z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- CONTACT FORM -->
+          <form class="contact-form reveal" id="contactForm">
+            <label>
+              <span>Full Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email Address</span>
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+            <label>
+              <span>Subject</span>
+              <input type="text" name="subject" placeholder="What's this about?" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Tell me a bit about your project or idea..." required></textarea>
+            </label>
+            <button type="submit" class="button button--primary contact-form__submit">Send Message <span>↗</span></button>
+            <p class="contact-form__note">This opens your email app addressed to me, with your details filled in.</p>
+            <div class="availability">
+              <span class="availability__dot" aria-hidden="true"></span>
+              Available for freelance work
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; Built by Olanrewaju Sofiat</p>
+    <p>&copy; <span id="year"></span> All rights reserved.</p>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
